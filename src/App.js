@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-
+import Users from './components/Users';
 import { useState } from 'react';
 // import ReactDOMClient from 'react-dom/client';
 
@@ -27,6 +27,10 @@ class App extends React.Component {
   render ()  { 
     return (<div >
     <Header title="Список пользователей" />
+    <main>
+      <Users />
+    </main>
+    <aside></aside>
    
 </div>)
 }

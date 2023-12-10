@@ -7,8 +7,27 @@ body {
 background-color: #444;
 color: #fff;
 font-family:  'Rubik Bubbles', sans-serif;
+font-weight: 300;
+  
 }
 .header{
     background-color: #200;
     padding: 20px;
+    font-weight: 600;
+}
+main{
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+}
+main .user{
+    margin-bottom: 50px;
+    background-color: #3e8fa3;
+    padding: 20px;
+}
+aside {
+    width: 20%;
+    margin-top:50pz;
+    margin-left: 5%;
+    float: left;
 }
