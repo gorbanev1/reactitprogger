@@ -27,28 +27,10 @@ class App extends React.Component {
       constructor(props){
         super(props)
         axios.get(baseUrl).then((res)=>{
-          console.log(res.data.data)
+          this.setState({users: res.data.data})
         })
         this.state = {
-            users: [
-                {
-                    id: 1,
-                    firstname: 'Bob',
-                    lastName: 'Marley',
-                    bio: 'dsfsaf as ds fa sfs',
-                    age: 40,
-                    pidor: true,
-                },
-                {
-                    id: 2,
-                    firstname: 'Hui',
-                    lastName: 'Pizdov',
-                    bio: 'SRET SRET',
-                    age: 77,
-                    pidor: false,
-                }
-        
-            ]
+            users: []
         }
         this.addUser=this.addUser.bind(this)
         this.deleteUser=this.deleteUser.bind(this)

@@ -17,8 +17,9 @@ class User extends React.Component{
         <IoHammerSharp className='edit-icon' onClick={()=>{
             this.setState({editForm: !this.state.editForm})
             }}/>
-        <h3>{this.user.firstname} {this.user.lastName}</h3>
-        <p>{this.user.bio}</p>
+        <h3>{this.user.first_name} {this.user.last_name}</h3>
+        <img alt ="av" src={this.user.avatar}/>
+        <p>{this.user.email}</p>
         <b>{this.user.pidor ? "Пидор": "Хуй"}</b>
         {this.state.editForm && <AddUser user={this.user} onAdd={this.props.onEdit}/>}
     </div>
